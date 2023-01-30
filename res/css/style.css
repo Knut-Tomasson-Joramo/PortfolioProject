@@ -1,0 +1,6 @@
+/* Some variables for whole site */
+:root {
+  --primary-color: rgb(235, 179, 74);
+  --secondary-color: rgb(205, 205, 205);
+  --background-color: rgb(41, 41, 41);
+}
