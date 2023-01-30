@@ -103,6 +103,26 @@ hr {
   margin-top: 10rem;
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.show-project {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  height: 2rem;
+  margin-left: auto;
+}
+
+.show-project:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+
 .content-section {
   background-color: var(--section-background-color);
   padding: 2rem;
