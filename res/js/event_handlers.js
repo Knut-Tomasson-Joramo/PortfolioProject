@@ -12,11 +12,13 @@ for (let i = 0; i < show_buttons.length; i++) {
       let project_section = target.currentTarget.parentNode.parentNode;
    
       if (project_section.style.height === "") {
-        console.log(target.currentTarget);
-        project_section.style.height = "fit-content";
+         console.log(target.currentTarget);
+         project_section.style.height = "fit-content";
+         button.innerHTML = "Hide";
       }
       else if (project_section.style.height === "fit-content") {
          project_section.style.height = "";
+         button.innerHTML = "Show";
         }
       
     });

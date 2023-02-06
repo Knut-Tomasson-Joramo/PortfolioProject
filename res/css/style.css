@@ -114,6 +114,7 @@ hr {
   background-color: var(--background-color);
   border-radius: var(--border-radius);
   height: 2rem;
+  width: 3rem;
   margin-left: auto;
 }
 
@@ -137,4 +138,12 @@ hr {
   overflow: hidden;
   margin: 1.5rem auto;
   padding: 1rem;
+}
+
+.project-section a {
+  text-decoration: underline;
+}
+
+.project-section a:hover {
+  text-decoration: none;
 }
