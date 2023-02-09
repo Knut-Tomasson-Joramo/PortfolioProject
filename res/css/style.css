@@ -147,3 +147,17 @@ hr {
 .project-section a:hover {
   text-decoration: none;
 }
+
+#skills_imgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo_img {
+  width: 5.5rem;
+  height: auto;
+}
+
+.logo_img:hover {
+  cursor: pointer;
+}

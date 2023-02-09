@@ -23,3 +23,61 @@ for (let i = 0; i < show_buttons.length; i++) {
       
     });
 }
+
+
+// Insert text into skills section
+
+// c++ text
+const cpp_text = `
+When studiing computer sience at MIUN university Sweeden, we mostly used C++ for our tasks
+`;
+
+// python text
+const pyton_text = `
+When I startet to look in to computer sience again in 2019, I decided to try and learn a new language.
+Python seemed like the perfekt alternative and I realy enjoy how straight forward it is.
+`;
+
+// android text
+const android_text = `
+During my years at MIUN university we did some android programing. bla bla bla
+`;
+
+// java text
+const java_text = `
+something about java..
+`;
+
+// js text
+const js_text = `
+something about js..
+`;
+
+// kotlin text
+const kotlin_text = `
+some kotlin text..
+`;
+
+// create function to insert childElement
+function insertPChild(parent, content) {
+    const paragraph = document.createElement("p");
+    paragraph.innerHTML = content;
+    parent.appendChild(paragraph);
+}
+
+// locate skills_description div
+const skills_description = document.getElementById("skills_description");
+
+
+// set up eventhandlers for skills images
+const cpp_img = document.getElementById("cpp_img");
+const python_img = document.getElementById("python_img");
+const android_img = document.getElementById("android_img");
+const java_img = document.getElementById("java_img");
+const js_img = document.getElementById("js_img");
+const kotlin_img = document.getElementById("kotlin_img");
+
+
+cpp_img.addEventListener("click", function() {
+    insertPChild(skills_description, cpp_text);
+});
