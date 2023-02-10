@@ -33,7 +33,7 @@ When studiing computer sience at MIUN university Sweeden, we mostly used C++ for
 `;
 
 // python text
-const pyton_text = `
+const python_text = `
 When I startet to look in to computer sience again in 2019, I decided to try and learn a new language.
 Python seemed like the perfekt alternative and I realy enjoy how straight forward it is.
 `;
@@ -77,7 +77,33 @@ const java_img = document.getElementById("java_img");
 const js_img = document.getElementById("js_img");
 const kotlin_img = document.getElementById("kotlin_img");
 
+let last_des = "";
+const cpp_des = "cpp";
+const py_des = "py";
+const and_des = "and";
+const java_des = "java";
+const js_des = "js";
+const kot_des = "kot";
 
-cpp_img.addEventListener("click", function() {
-    insertPChild(skills_description, cpp_text);
-});
+function addDescriptionListener(des_img, des_text, des_const) {
+    des_img.addEventListener("click", function() {
+        if (skills_description.hasChildNodes()) {
+            skills_description.removeChild(skills_description.childNodes[0]);
+        }
+        if (last_des !== des_const) {
+           insertPChild(skills_description, des_text); 
+           last_des = des_const;
+        }
+        else {
+            last_des = "";
+        }
+        
+    });
+}
+
+addDescriptionListener(cpp_img, cpp_text, cpp_des);
+addDescriptionListener(python_img, python_text, py_des);
+addDescriptionListener(android_img, android_text, and_des);
+addDescriptionListener(java_img, java_text, java_des);
+addDescriptionListener(js_img, js_text, js_des);
+addDescriptionListener(kotlin_img, kotlin_text, kot_des);
