@@ -170,3 +170,29 @@ hr {
   border-radius: var(--border-radius);
   background-color: var(--background-highlight);
 }
+
+#contact_section form {
+  display: grid;
+  width: 60%;
+}
+
+#contact_section label {
+  padding: .4rem;
+}
+
+#contact_section form input, #contact_section form textarea {
+  margin-bottom: 1rem;
+  background-color: var(--background-highlight);
+  color: var(--accent-color);
+  border-radius: var(--border-radius);
+}
+
+#submit_button {
+  width: 10rem;
+  padding: .5rem;
+  border-radius: var(--border-radius);
+}
+
+#submit_button:hover {
+  cursor: pointer;
+}
