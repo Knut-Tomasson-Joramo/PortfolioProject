@@ -4,6 +4,7 @@
   --font-color: rgb(205, 205, 205);
   --background-color: rgb(41, 41, 41);
   --section-background-color: rgb(35, 35, 35);
+  --background-highlight: rgb(86, 86, 86);
   --border-radius: 10px;
 }
 
@@ -160,4 +161,12 @@ hr {
 
 .logo_img:hover {
   cursor: pointer;
+}
+
+#skills_description {
+  padding: 3rem;
+  margin: 2rem;
+  display: none;
+  border-radius: var(--border-radius);
+  background-color: var(--background-highlight);
 }

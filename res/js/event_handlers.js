@@ -29,7 +29,7 @@ for (let i = 0; i < show_buttons.length; i++) {
 
 // c++ text
 const cpp_text = `
-When studiing computer sience at MIUN university Sweeden, we mostly used C++ for our tasks
+When studing computer sience at MIUN university Sweeden, we mostly used C++ for our tasks
 `;
 
 // python text
@@ -40,22 +40,25 @@ Python seemed like the perfekt alternative and I realy enjoy how straight forwar
 
 // android text
 const android_text = `
-During my years at MIUN university we did some android programing. bla bla bla
+During my years at MIUN university we did some android programing with java. After that I have dipped my toes into
+some newer stuff with Kotlin.
 `;
 
 // java text
 const java_text = `
-something about java..
+In the computer sience program we used java for some courses, however this is not current knowledge for me, so some
+refreshment at required before using this language to something meaningfull.
 `;
 
 // js text
 const js_text = `
-something about js..
+Currently I am studing at CodeCademy and learning about full-stack development. JavaScript is a big part of the program.
 `;
 
 // kotlin text
 const kotlin_text = `
-some kotlin text..
+I regulary check in to developer.google.com and read about the newest on the android front. This made me dipp my toes into Kotlin.
+I have alsoe studied kotlin on hyperskill to learn more about the language.
 `;
 
 // create function to insert childElement
@@ -89,10 +92,12 @@ function addDescriptionListener(des_img, des_text, des_const) {
     des_img.addEventListener("click", function() {
         if (skills_description.hasChildNodes()) {
             skills_description.removeChild(skills_description.childNodes[0]);
+            skills_description.style.display = "";
         }
         if (last_des !== des_const) {
            insertPChild(skills_description, des_text); 
            last_des = des_const;
+           skills_description.style.display = "block";
         }
         else {
             last_des = "";
