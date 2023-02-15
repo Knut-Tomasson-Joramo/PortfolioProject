@@ -78,6 +78,37 @@ header li {
   margin: 1rem;
 }
 
+/* Mobile header */
+@media only screen and (max-width: 720px){
+  header {
+    height: 6rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    font-size: .9rem;
+    margin: .5rem auto auto auto;
+    padding: 0;
+  }
+}
+
+/* small screen header */
+@media only screen and (max-width: 380px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  nav ul {
+    font-size: .7rem;
+  }
+}
+
 main {
   position: relative;
   top: 7rem;
@@ -163,6 +194,31 @@ hr {
   cursor: pointer;
 }
 
+/* mobile size logos */
+@media only screen and (max-width: 720px) {
+  .logo_img {
+    width: 3rem;
+  }
+}
+
+/* small screen */
+@media only screen and (max-width: 480px){
+  #skills_imgs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo_img {
+    margin: 1rem;
+  }
+  
+  #skills_description {
+    padding: 1rem;
+    margin: 1rem;
+  }
+    
+}
+
 #skills_description {
   padding: 3rem;
   margin: 2rem;
@@ -174,6 +230,12 @@ hr {
 #contact_section form {
   display: grid;
   width: 60%;
+}
+
+@media only screen and (max-width: 480px) {
+  #contact_section form {
+    width: 90%;
+  }
 }
 
 #contact_section label {
