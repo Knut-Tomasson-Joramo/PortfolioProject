@@ -1,0 +1,78 @@
+/* mobile first style sheet */
+
+/* variables */
+:root {
+  --background-color: rgb(192, 221, 192);
+  --font-color: rgb(235, 47, 47);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+/* universal styles */
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.desktop {
+  display: none;
+}
+
+.simple-section {
+  padding: 5rem 0;
+}
+
+/* Header */
+header nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* Greeting section */
+#greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting a {
+  text-decoration: none;
+}
+
+#contact-link {
+  font-size: .7rem;
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  border-radius: 2px;
+  padding: .3rem;
+}
+
+
+
+/* skills section */
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills_imgs {
+  display: grid;
+  width: 60%;
+  grid-template-columns: auto auto auto;
+}
+
+.logo_img {
+  width: 3rem;
+  height: auto;
+  margin: auto;
+  padding: 1rem .7rem;
+}

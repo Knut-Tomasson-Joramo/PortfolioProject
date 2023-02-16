@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Dev Portfolio</title>
-    <link rel="stylesheet" href="./res/css/style.css">
+    <link rel="stylesheet" href="./res/css/mobile-first-style.css">
     <script src="./res/js/event_handlers.js" defer></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
   </head>
@@ -10,33 +10,34 @@
     <header>
       <nav>
         <a href="index.html">
-          <h1>Knut Tomasson Joramo</h1>
+          <p>-ktj-</p>
         </a>
-        <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
+        <ul class="desktop">
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about-me">About Me</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>   
-      <section class="content-section" id="about-me">
-        <h2>About me</h2>
-        <p>
-          Hello, my name is Knut Tommasson Joramo and I live in Bardufoss, Norway.
-          Currently I work at the local airport, and learning programming on the side. I love 
-          solving problems and learning new skills. My most recent developments have been in 
-          Python, HTML, CSS and JavaScript, but earlier I have used C++, Java, PHP, and Kotlin.
-        </p>
-        <p>
-          In my spare time I like to spend time with my fiance and two children, and I alsoe 
-          have a passion for mountainbiking. Staying in shape and being active is important for
-          me to feel in balance.
-        </p>
-        <div id="profile-pic">
-          <img src="./res/img/reinebringen.JPG" alt="me running on a mountain named reinebringen" id="pic-of-me">
+    <main>
+      <section id="greeting" class="simple-section content-section">
+        <h1>Knut Tomasson Joramo</h1>
+        <p>Full-stack developer</p>
+        <a href="contact.html"><p id="contact-link">-contact me-</p></a>
+      </section>   
+      <hr>
+      <section class="content-section simple-section" id="skills">
+        <h2>Skills</h2>
+        <div id="skills_imgs">
+          <img src="./res/img/logo/cpp_logo.png" alt="c++ logo" class="logo_img" id="cpp_img">
+          <img src="./res/img/logo/python_logo.png" alt="python logo" class="logo_img" id="python_img">
+          <img src="./res/img/logo/android_logo.png" alt="android logo" class="logo_img" id="android_img">
+          <img src="./res/img/logo/java_logo.png" alt="java logo" class="logo_img" id="java_img">
+          <img src="./res/img/logo/js_logo.png" alt="javascript logo" class="logo_img" id="js_img">
+          <img src="./res/img/logo/kotlin_logo.png" alt="kotlin logo" class="logo_img" id="kotlin_img">
         </div>
+        <div id="skills_description"></div>
       </section>
       <hr>
       <section class="content-section" id="projects">
@@ -108,17 +109,22 @@
         </section>
       </section>
       <hr>
-      <section class="content-section" id="skills">
-        <h2>Skills</h2>
-        <div id="skills_imgs">
-          <img src="./res/img/logo/cpp_logo.png" alt="c++ logo" class="logo_img" id="cpp_img">
-          <img src="./res/img/logo/python_logo.png" alt="python logo" class="logo_img" id="python_img">
-          <img src="./res/img/logo/android_logo.png" alt="android logo" class="logo_img" id="android_img">
-          <img src="./res/img/logo/java_logo.png" alt="java logo" class="logo_img" id="java_img">
-          <img src="./res/img/logo/js_logo.png" alt="javascript logo" class="logo_img" id="js_img">
-          <img src="./res/img/logo/kotlin_logo.png" alt="kotlin logo" class="logo_img" id="kotlin_img">
+      <section class="content-section" id="about-me">
+        <h2>About me</h2>
+        <p>
+          Hello, my name is Knut Tommasson Joramo and I live in Bardufoss, Norway.
+          Currently I work at the local airport, and learning programming on the side. I love 
+          solving problems and learning new skills. My most recent developments have been in 
+          Python, HTML, CSS and JavaScript, but earlier I have used C++, Java, PHP, and Kotlin.
+        </p>
+        <p>
+          In my spare time I like to spend time with my fiance and two children, and I alsoe 
+          have a passion for mountainbiking. Staying in shape and being active is important for
+          me to feel in balance.
+        </p>
+        <div id="profile-pic">
+          <img src="./res/img/reinebringen.JPG" alt="me running on a mountain named reinebringen" id="pic-of-me">
         </div>
-        <div id="skills_description"></div>
       </section>
       <hr>
     </main>
