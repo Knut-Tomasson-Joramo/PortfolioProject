@@ -1,3 +1,30 @@
+// activate menu
+
+// get menu button and menu
+const menu_button = document.querySelector(".menu-button");
+const menu = document.querySelector("#site-link-list");
+
+// make function to do the event
+function toggleMenu() {
+    menu.classList.toggle("active-menu");
+        for (let i = 0; i < 3; i++) {
+            menu_button.children[i].classList.toggle("change");
+         }
+}
+
+menu_button.addEventListener('click', () => {
+     toggleMenu();
+});
+
+// remove change from menubutton when menu item is clicked
+const menu_children = document.getElementsByClassName("nav-link");
+for (let j = 0; j < menu_children.length; j++) {
+    menu_children[j].addEventListener('click', () => {
+        toggleMenu();
+    })
+}
+
+
 /**
  * Make button show the description of a project
  */
